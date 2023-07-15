@@ -28,8 +28,23 @@ A collection of code examples for composing IBM Salesforce Connector Lightning W
               
                   
 
+2. Clone this repository:
+   ```
+   git clone https://github.com/ibm-ecm/ibm-ecm-connector-salesforce-lwc-recipes
+   cd ibm-ecm-connector-salesforce-lwc-recipes
+   ```
 
-2. Now you need to authorize your Salesforce Org:
+3. Now you need to authorize your Salesforce Org:
    ```
    sf org login web
+   ```
+
+4. Push the app to your scratch org:
+   ```
+   sf project deploy start
+   ```
+
+5. Open the scratch org:
+   ```
+   sf org open
    ```
