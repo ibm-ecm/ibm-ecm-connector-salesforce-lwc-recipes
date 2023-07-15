@@ -26,8 +26,6 @@ A collection of code examples for composing IBM Salesforce Connector Lightning W
                - Description    (String)
                - ContractTerm   (Integer)
               
-                  
-
 2. Clone this repository:
    ```
    git clone https://github.com/ibm-ecm/ibm-ecm-connector-salesforce-lwc-recipes
