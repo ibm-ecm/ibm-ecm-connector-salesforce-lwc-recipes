@@ -15,7 +15,7 @@ A collection of code examples for composing IBM Salesforce Connector Lightning W
            - Properties
                - Description   (String)
                - AccountNumber (String)
-               - AnnualRevenue (String)
+               - AnnualRevenue (Float)
                - Rating        (String) Choice List (Hot, Warm, Cold)
                - IsNew         (Boolean)
                - DueDate       (DateTime)
