@@ -22,6 +22,11 @@ export default class DocumentsListWrapper extends LightningElement {
       }
     }
 
+    handleFileUploadComplete () {
+      // A back function after the file is uploaded.
+      console.log('File Upload Completed');
+    }
+
     get docClass () {
       /*
         A condition logic to create different Document class and sets its properties.
