@@ -1,4 +1,4 @@
-# IBM ECM Salesforce Lightning Web Components Recipes
+# IBM ECM Salesforce Connector Recipes
 
 A collection of code examples for composing IBM Salesforce Connector Lightning Web Components. Each recipe demonstrate how to compose a wrapper component using IBM Salesforce Connector Lightning Web Component and setting the custom properties of the FileNet Document Class.
 
