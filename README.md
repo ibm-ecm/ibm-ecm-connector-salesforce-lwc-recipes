@@ -37,7 +37,7 @@ A collection of code examples for composing IBM Salesforce Connector Lightning W
    sf org login web
    ```
 
-4. Push the app to your scratch org:
+4. Push the app to your Salesforce org:
    ```
    sf project deploy start
    ```
