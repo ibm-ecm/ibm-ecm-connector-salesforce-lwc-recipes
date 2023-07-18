@@ -42,7 +42,7 @@ A collection of code examples for composing IBM Salesforce Connector Lightning W
    sf project deploy start
    ```
 
-5. Open the scratch org:
+5. To open the Salesforce org:
    ```
    sf org open
    ```
