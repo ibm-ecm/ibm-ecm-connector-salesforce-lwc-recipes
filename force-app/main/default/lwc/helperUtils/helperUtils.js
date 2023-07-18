@@ -1,9 +1,9 @@
 /** 
- * A Class representing a Content Platform Engine Document. 
- * This is a Data Transfer Object(DTO). 
+ * A Class representing a Content Platform Engine Document.  
  *  
 */
 export class DocumentClass {
+
     name = null;
     propertyDefinitions = {};
     hideDocumentClass = true;
@@ -11,7 +11,7 @@ export class DocumentClass {
 
     /**
      * Create a Document Class instance.
-     * @param {String} name - The symbolic name of the Document class.
+     * @param {string} name - The symbolic name of the Document class.
      */    
     constructor(name) {
       this.name = name;
@@ -20,9 +20,9 @@ export class DocumentClass {
     /**
      * addProperty - Add a property to Property Definitions. Either value or 
      * fieldName should be set when adding the property.
-     * @param  {String} name  - The symbolic name of the Property Definition.
-     * @param  {String} value - The value of the property.
-     * @param  {String} fieldName - A Salesforce record field name (without __c). 
+     * @param  {string} name  - The symbolic name of the Property Definition.
+     * @param  {string} value - The value of the property.
+     * @param  {string} fieldName - A Salesforce record field name (without __c). 
      *                              Connector will retrieve the value of the field 
      *                              and place into the proprty.
      * @param  {boolean} isHidden - Hide the property on Add Dialog. The default is true.
@@ -36,7 +36,8 @@ export class DocumentClass {
     }
 
     /**
-     * toObject - Convert to the plain object
+     * Get the plain object
+     * @return {object} - The object value of the DocumentClass instance.
      */     
     toObject() {
         return { ...this };
