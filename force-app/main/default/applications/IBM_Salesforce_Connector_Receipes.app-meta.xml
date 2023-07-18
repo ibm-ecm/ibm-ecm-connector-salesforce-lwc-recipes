@@ -6,11 +6,11 @@
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
-    <description>IBM Salesforce Connector Receipes</description>
+    <description>IBM Salesforce Connector Recipes</description>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
-    <label>IBM Salesforce Connector Receipes</label>
+    <label>IBM Salesforce Connector Recipes</label>
     <navType>Standard</navType>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contract</tabs>
