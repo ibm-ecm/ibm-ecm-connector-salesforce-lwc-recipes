@@ -11,7 +11,7 @@
     </targets>
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
-            <property label="Object Store" name="objectStoreId" type="String" />
+            <property label="Object Store" name="objectStoreId" type="String" required="true"/>
             <property label="File Upload Label" name="fileUploadLabel" type="String" default="Ownership Documentation"/>            
             <supportedFormFactors>
                 <supportedFormFactor type="Large" />
@@ -19,7 +19,7 @@
             </supportedFormFactors>
         </targetConfig>
         <targetConfig targets="lightning__AppPage">
-            <property name="objectStoreId" type="String" label="Object Store"/>
+            <property name="objectStoreId" type="String" label="Object Store" required="true"/>
             <supportedFormFactors>
                 <supportedFormFactor type="Small"/>
                 <supportedFormFactor type="Large"/>
@@ -27,7 +27,7 @@
         </targetConfig>
         <targetConfig targets="lightningCommunity__Default">
             <property name="recordId" type="String" label="Record Id" default="{!recordId}" />
-            <property name="objectStoreId" type="String" label="Object Store"/>
+            <property name="objectStoreId" type="String" label="Object Store" required="true"/>
             <property label="File Upload Label" name="fileUploadLabel" type="String" default="Ownership Documentation"/> 
         </targetConfig>
     </targetConfigs>
