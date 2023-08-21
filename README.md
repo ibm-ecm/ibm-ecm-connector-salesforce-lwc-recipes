@@ -39,7 +39,7 @@ A collection of code examples for composing IBM Salesforce Connector Lightning W
 
 4. Set the default username for the target Org:
    ```
-   sf config set target-org=<salesforce_user_name>
+   sf config set target-org=<your_salesforce_username>
    ```
 
 5. Push the app to your Salesforce org:
