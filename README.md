@@ -49,7 +49,7 @@ A collection of code examples for composing IBM Salesforce Connector Lightning W
 
 6. Allow access for a subset of Salesforce Organization users
    1. In the Setup menu, go to Administration > Users, and select Permission Sets.
-   2. Click IBM Salesforce Connector Receipes User permission set.
+   2. Click IBM Salesforce Connector Recipes User permission set.
    3. On the Permission set screen, click Manage Assignments.
    4. Select the user or users that you want to add to the permission set (or unselect users who you would like to remove from the permission set), and click Assign.
    5. Click Save to save your changes.

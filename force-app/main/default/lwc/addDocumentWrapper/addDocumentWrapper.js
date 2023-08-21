@@ -30,8 +30,8 @@ export default class DocumentsListWrapper extends LightningElement {
     get docClass () {
       /*
         A condition logic to create different Document class and sets its properties.
-          - The API name of the Record is Account then create a MyDocument1 class. 
-          - The API name of the Record is Book__c then create a Book Class.
+          - The API name of the Record is Account then create a MyAccount class. 
+          - The API name of the Record is Contract then create a MyContract Class.
           - For all other Records, create a Document class.
         Document class name and Property name must match with the Content Platform Engine
         Document class symbolic name and Property Defnition symbolic name.
