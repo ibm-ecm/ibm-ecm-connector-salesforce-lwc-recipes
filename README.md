@@ -37,17 +37,22 @@ A collection of code examples for composing IBM Salesforce Connector Lightning W
    sf org login web
    ```
 
-4. Push the app to your Salesforce org:
+4. Set the default username for the target Org:
+   ```
+   sf config set target-org=<salesforce_user_name>
+   ```
+
+5. Push the app to your Salesforce org:
    ```
    sf project deploy start
    ```
 
-5. To open the Salesforce org:
+6. To open the Salesforce org:
    ```
    sf org open
    ```
 
-6. Allow access for a subset of Salesforce Organization users
+7. Allow access for a subset of Salesforce Organization users
    1. In the Setup menu, go to Administration > Users, and select Permission Sets.
    2. Click IBM Salesforce Connector Recipes User permission set.
    3. On the Permission set screen, click Manage Assignments.
