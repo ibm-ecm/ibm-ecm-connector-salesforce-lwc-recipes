@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 import { LightningElement, api } from 'lwc';
-import { DocumentClass } from 'c/helperUtils';
+import { DocumentClass } from 'c/lwcHelperUtils';
 import queryRecord from '@salesforce/apex/RecordInfoController.queryRecord';
 
 export default class DocumentsListWrapper extends LightningElement  {    
