@@ -3,6 +3,7 @@
 import { LightningElement, api } from 'lwc';
 import { DocumentClass } from 'c/lwcHelperUtils';
 import queryRecord from '@salesforce/apex/RecordInfoController.queryRecord';
+import getUserName from '@salesforce/apex/UserInfoController.getUserName';
 
 export default class DocumentsListWrapper extends LightningElement  {    
     @api recordId;
@@ -12,12 +13,19 @@ export default class DocumentsListWrapper extends LightningElement  {
     @api hideDocumentActions;
         
     objectApiName;
+    userName;
 
     connectedCallback() {
       if(!this.objectApiName) {
         if(this.recordId) {
           queryRecord({recordId: this.recordId}).then(apiName => {
             this.objectApiName = apiName;
+            getUserName().then(username => {
+              this.userName = username;
+            }).catch(err => {
+              console.log(err);
+            }); 
+
           }).catch(err => {
             console.log(err);
           });       
@@ -55,6 +63,7 @@ export default class DocumentsListWrapper extends LightningElement  {
             dc.addProperty('Rating', null, 'Rating'); //Account field - Rating
             dc.addProperty('IsNew', true);
             dc.addProperty('DueDate', '2023-11-25T23:47:30.323Z');
+            dc.addProperty('SalesforceUserName', this.userName);
 
             return dc.toObject();
           }
