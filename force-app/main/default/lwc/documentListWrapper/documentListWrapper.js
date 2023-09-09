@@ -3,7 +3,7 @@
 import { LightningElement, api } from 'lwc';
 import { DocumentClass } from 'c/lwcHelperUtils';
 import queryRecord from '@salesforce/apex/RecordInfoController.queryRecord';
-import getUserName from '@salesforce/apex/UserInfoController.getUserName';
+import getUserInfo from '@salesforce/apex/UserInfoController.getUserInfo';
 
 export default class DocumentsListWrapper extends LightningElement  {    
     @api recordId;
@@ -14,14 +14,20 @@ export default class DocumentsListWrapper extends LightningElement  {
         
     objectApiName;
     userName;
-
+    division; 
+    department; 
+    companyName;
+    
     connectedCallback() {
       if(!this.objectApiName) {
         if(this.recordId) {
           queryRecord({recordId: this.recordId}).then(apiName => {
             this.objectApiName = apiName;
-            getUserName().then(username => {
-              this.userName = username;
+            getUserInfo().then(ui => {
+              this.userName = ui.Username;
+              this.division = ui.Division;
+              this.department = ui.Department;
+              this.companyName = ui.CompanyName;
             }).catch(err => {
               console.log(err);
             }); 
@@ -64,6 +70,10 @@ export default class DocumentsListWrapper extends LightningElement  {
             dc.addProperty('IsNew', true);
             dc.addProperty('DueDate', '2023-11-25T23:47:30.323Z');
             dc.addProperty('SalesforceUserName', this.userName);
+            dc.addProperty('Division', this.division);
+            dc.addProperty('Department', this.department);
+            dc.addProperty('CompanyName', this.companyName);
+
 
             return dc.toObject();
           }
