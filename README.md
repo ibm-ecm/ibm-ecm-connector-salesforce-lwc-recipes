@@ -10,7 +10,7 @@ A collection of code examples for composing IBM Salesforce Connector Lightning W
     - Install Visual Studio Code
     - Install the Visual Studio Code Salesforce extensions, including the Lightning Web Components extension
     - Install Salesforce Connector v5.8.0 on your Salesforce Org
-    - Create following FileNet Document Classes in the Object Store 
+    - Create following FileNet Document Classes in the Object Store. Reconfigure the Object Store to include these classes. 
        - MyAccount
            - Properties
                - Description   (String)
@@ -25,6 +25,16 @@ A collection of code examples for composing IBM Salesforce Connector Lightning W
                - ContractNumber (String)
                - Description    (String)
                - ContractTerm   (Integer)
+
+       - RealEstateProperty
+           - Properties
+               - Address   (String)
+               - Type      (String)
+               - Bathrooms (Float)
+               - Bedrooms  (Integer)
+               - Garage    (Integer)
+               - Price     (Float)
+               - Sqft      (Integer)               
               
 2. Clone this repository:
    ```
