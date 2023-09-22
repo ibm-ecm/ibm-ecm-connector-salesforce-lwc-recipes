@@ -11,8 +11,8 @@
     </targets>
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
-            <property name="objectApiName" type="String" label="Object API Name" />
-            <property label="Object Store" name="objectStoreId" type="String" />
+            <property name="objectApiName" type="String" label="Object API Name" required="true"/>
+            <property label="Object Store" name="objectStoreId" type="String"  required="true"/>
             <property label="Title" name="listTitle" type="String"/>
             <property label="Visible Rows" name="visibleRows" type="Integer" default="5"/>
             <property label="Hide Document Actions" name="hideDocumentActions" type="String"/>          
@@ -30,8 +30,8 @@
         </targetConfig>
         <targetConfig targets="lightningCommunity__Default">
             <property name="recordId" type="String" label="Record Id" default="{!recordId}" />
-            <property name="objectApiName" type="String" label="Object API Name" />            
-            <property name="objectStoreId" type="String" label="Object Store"/>
+            <property name="objectApiName" type="String" label="Object API Name" required="true"/>            
+            <property name="objectStoreId" type="String" label="Object Store" required="true"/>
             <property label="Title" name="listTitle" type="String"/>
             <property label="Visible Rows" name="visibleRows" type="Integer" default="5"/>
             <property label="Hide Document Actions" name="hideDocumentActions" type="String"/>            
