@@ -7,7 +7,37 @@
     <classAccesses>
         <apexClass>RecordInfoController</apexClass>
         <enabled>true</enabled>
-    </classAccesses>   
+    </classAccesses>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>RealEstateProperty__c.Bathrooms__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>RealEstateProperty__c.Bedrooms__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>RealEstateProperty__c.Garage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>RealEstateProperty__c.Price__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>RealEstateProperty__c.Sqft__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>RealEstateProperty__c.Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>IBM Salesforce Connector Receipes User</label>
     <license>Salesforce</license>
@@ -20,4 +50,17 @@
         <object>Account</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>RealEstateProperty__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <tabSettings>
+        <tab>RealEstateProperty__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>
