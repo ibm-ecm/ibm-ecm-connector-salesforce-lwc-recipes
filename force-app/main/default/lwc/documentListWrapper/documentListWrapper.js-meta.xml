@@ -14,7 +14,7 @@
             <property label="Object Store" description="Enter Object Store symbolic name" name="objectStoreId" type="String" required="true" />
             <property label="Title" name="listTitle" type="String"/>
             <property label="Visible Rows" name="visibleRows" type="Integer" default="5"/>
-            <property label="Hide Document Actions" description="Enter a comma separated list of the options to hide, using the keywords:  Properties,View,Download,UploadNewVersion,AddToRecord,RemoveFromRecord" name="hideDocumentActions" type="String"/>          
+            <property label="Hide Document Actions" description="Enter a comma separated list of the options to hide, using the keywords:  Properties,View,Download,UploadNewVersion,AddToRecord,RemoveFromRecord,New" name="hideDocumentActions" type="String"/>          
             <supportedFormFactors>
                 <supportedFormFactor type="Large" />
                 <supportedFormFactor type="Small"/>
